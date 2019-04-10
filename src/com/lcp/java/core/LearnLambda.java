@@ -1,4 +1,4 @@
-package com.lcp.java.core;
+ï»¿package com.lcp.java.core;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,7 +30,7 @@ public class LearnLambda {
 	}
 
 	/**
-	 * Ê¹ÓÃÕı³£·½·¨£¬ÄäÃû·½·¨£¬lambda·½·¨·Ö±ğ¶ÔÁĞ±í½øĞĞÉ¸Ñ¡
+	 * ä½¿ç”¨æ­£å¸¸æ–¹æ³•ï¼ŒåŒ¿åæ–¹æ³•ï¼Œlambdaæ–¹æ³•åˆ†åˆ«å¯¹åˆ—è¡¨è¿›è¡Œç­›é€‰
 	 * @param hList
 	 */
 	private void differentMethodToFilter(List<Hero> hList) {
@@ -43,7 +43,7 @@ public class LearnLambda {
 	}
 
 	/**
-	 * ÓÃlambda±í´ïÊ½×öÅÅĞò
+	 * ç”¨lambdaè¡¨è¾¾å¼åšæ’åº
 	 * @param hList
 	 */
 	private void comparator(List<Hero> hList) {
@@ -54,10 +54,10 @@ public class LearnLambda {
 	}
 
 	/**
-	 * ·½·¨ÒıÓÃ
-	 * ÒıÓÃ¾²Ì¬·½·¨
-	 * ÒıÓÃÀàµ±ÖĞÊÊÅä·½·¨
-	 * ÒıÓÃ¶ÔÏó·½·¨
+	 * æ–¹æ³•å¼•ç”¨
+	 * å¼•ç”¨é™æ€æ–¹æ³•
+	 * å¼•ç”¨ç±»å½“ä¸­é€‚é…æ–¹æ³•
+	 * å¼•ç”¨å¯¹è±¡æ–¹æ³•
 	 * @param hList
 	 */
 	private void methodRefrence(List<Hero> hList) {
@@ -69,7 +69,7 @@ public class LearnLambda {
 	}
 
 	/**
-	 * lambda±í´ïÊ½ÓëCollectionÖĞµÄÓ¦ÓÃ£º¾ÛºÏ
+	 * lambdaè¡¨è¾¾å¼ä¸Collectionä¸­çš„åº”ç”¨ï¼šèšåˆ
 	 * @param hList
 	 */
 	private void aggregate(List<Hero> hList) {
@@ -82,7 +82,7 @@ public class LearnLambda {
 	}
 
 	/**
-	 * Õı³£·½·¨É¸Ñ¡
+	 * æ­£å¸¸æ–¹æ³•ç­›é€‰
 	 * @param hList
 	 * @return
 	 */
@@ -97,7 +97,7 @@ public class LearnLambda {
 	}
 
 	/**
-	 * ÄäÃû·½·¨É¸Ñ¡
+	 * åŒ¿åæ–¹æ³•ç­›é€‰
 	 * @param hList
 	 * @return
 	 */
@@ -118,7 +118,7 @@ public class LearnLambda {
 	}
 
 	/**
-	 * lambda·½·¨É¸Ñ¡
+	 * lambdaæ–¹æ³•ç­›é€‰
 	 * @param hList
 	 * @return
 	 */
@@ -133,7 +133,7 @@ public class LearnLambda {
 	}
 
 	/**
-	 * É¸Ñ¡³ö·ûºÏ·ûºÏÌõ¼şµÄ¶ÔÏó
+	 * ç­›é€‰å‡ºç¬¦åˆç¬¦åˆæ¡ä»¶çš„å¯¹è±¡
 	 * @param hList
 	 * @param checker
 	 */
@@ -146,7 +146,7 @@ public class LearnLambda {
 	}
 
 	/**
-	 * ²âÊÔ¾²Ì¬·½·¨ÒıÓÃ
+	 * æµ‹è¯•é™æ€æ–¹æ³•å¼•ç”¨
 	 * @param hero
 	 * @return
 	 */
@@ -155,7 +155,7 @@ public class LearnLambda {
 	}
 
 	/**
-	 * ²âÊÔÊ¾Àı·½·¨ÒıÓÃ
+	 * æµ‹è¯•ç¤ºä¾‹æ–¹æ³•å¼•ç”¨
 	 * @param hero
 	 * @return
 	 */
@@ -190,7 +190,7 @@ public class LearnLambda {
 		}
 
 		/**
-		 * ÊÊÅä·½·¨ÒıÓÃ
+		 * é€‚é…æ–¹æ³•å¼•ç”¨
 		 * @return
 		 */
 		public boolean findTank() {
@@ -202,7 +202,7 @@ public class LearnLambda {
 
 
 /**
- * ÊÊÅäÆ÷½Ó¿Ú(³éÏó·½·¨²»Ö§³Ö·½·¨ÒıÓÃ£¬»¹ÓĞlambda±í´ïÊ½)
+ * é€‚é…å™¨æ¥å£(æŠ½è±¡æ–¹æ³•ä¸æ”¯æŒæ–¹æ³•å¼•ç”¨ï¼Œè¿˜æœ‰lambdaè¡¨è¾¾å¼)
  * @author buaaL
  *
  */

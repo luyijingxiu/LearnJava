@@ -15,7 +15,7 @@ public class LearnInterfaceAndInherit {
 	}
 
 	/**
-	 * override·½·¨²âÊÔ£¬BÖØĞ´ÁËAµÄf·½·¨£¬µ÷ÓÃÒÔ¿´ÊÇ·ñÖØĞ´ÆäĞĞÎª
+	 * overrideæ–¹æ³•æµ‹è¯•ï¼ŒBé‡å†™äº†Açš„fæ–¹æ³•ï¼Œè°ƒç”¨ä»¥çœ‹æ˜¯å¦é‡å†™å…¶è¡Œä¸º
 	 */
 	private void testOverride() {
 		System.out.println("LearnClass.testOverride()");
@@ -27,8 +27,8 @@ public class LearnInterfaceAndInherit {
 	}
 
 	/**
-	 * instanceof·µ»Øµ±Ç°¶ÔÏóÊÇ·ñÊôÓÚÄ³¸öÀà
-	 *  ÆäÖĞB extends A
+	 * instanceofè¿”å›å½“å‰å¯¹è±¡æ˜¯å¦å±äºæŸä¸ªç±»
+	 *  å…¶ä¸­B extends A
 	 */
 	private void testInstanceOf() {
 		System.out.println("LearnClass.testInstanceOf()");
@@ -50,7 +50,7 @@ public class LearnInterfaceAndInherit {
 	}
 
 	/**
-	 * static·½·¨µÄÖØĞ´½Ğ¸²¸Ç
+	 * staticæ–¹æ³•çš„é‡å†™å«è¦†ç›–
 	 */
 	private void testHide() {
 
@@ -61,27 +61,27 @@ public class LearnInterfaceAndInherit {
 		b.f1();
 
 		a = new B(1);
-		a.f1();// Êä³östatic A.f1(),ËùÒÔÀà·½·¨Ã»ÓĞ¶àÌ¬
+		a.f1();// è¾“å‡ºstatic A.f1(),æ‰€ä»¥ç±»æ–¹æ³•æ²¡æœ‰å¤šæ€
 		a.f();
 	}
 
 	/**
-	 * ²âÊÔÄÚ²¿Àà
-	 * ×¢ÒâÓï·¨
+	 * æµ‹è¯•å†…éƒ¨ç±»
+	 * æ³¨æ„è¯­æ³•
 	 */
 	private void testInnerClass() {
 		System.out.println("LearnInterfaceAndInherit.testInnerClass()");
 		
-		// ÊµÀı»¯·Ç¾²Ì¬ÄÚ²¿Àà±ØĞëÔÚÍâ²¿Àà¶ÔÏóµÄ»ù´¡ÉÏ
+		// å®ä¾‹åŒ–éé™æ€å†…éƒ¨ç±»å¿…é¡»åœ¨å¤–éƒ¨ç±»å¯¹è±¡çš„åŸºç¡€ä¸Š
 		D d = new C().new D();
-		//ÊµÀı»¯¾²Ì¬ÄÚ²¿Àà¿ÉÒÔÖ±½ÓÊµÀı»¯
+		//å®ä¾‹åŒ–é™æ€å†…éƒ¨ç±»å¯ä»¥ç›´æ¥å®ä¾‹åŒ–
 		F f = new C.F();
 		f.f();
 	}
 
 	/**
-	 * ±¾µØÀà
-	 *  ·½·¨ÀïÃæµÄÀà£º¿ÉÒÔÀí½âÎªÓĞÃû×ÖµÄÄäÃûÀà£¬¶øÇÒÉùÃ÷ºÍÊµÀı»¯·Ö¿ª
+	 * æœ¬åœ°ç±»
+	 *  æ–¹æ³•é‡Œé¢çš„ç±»ï¼šå¯ä»¥ç†è§£ä¸ºæœ‰åå­—çš„åŒ¿åç±»ï¼Œè€Œä¸”å£°æ˜å’Œå®ä¾‹åŒ–åˆ†å¼€
 	 */
 	private void testLocalClass() {
 		System.out.println("LearnClass.testLocalClass()");
@@ -96,9 +96,9 @@ public class LearnInterfaceAndInherit {
 	}
 
 	/**
-	 * ÄäÃûÀà
-	 * ÉùÃ÷ºÍÊµÀı»¯Í¬Ê±·¢Éú
-	 * µ±³¡ÊµÏÖ±ØĞëµÄ³éÏó·½·¨
+	 * åŒ¿åç±»
+	 * å£°æ˜å’Œå®ä¾‹åŒ–åŒæ—¶å‘ç”Ÿ
+	 * å½“åœºå®ç°å¿…é¡»çš„æŠ½è±¡æ–¹æ³•
 	 */
 	private void testAnnoymousClass() {
 		System.out.println("LearnClass.testAnnoymousClass()");
@@ -108,14 +108,14 @@ public class LearnInterfaceAndInherit {
 
 			@Override
 			public void f() {
-				// ÕâÀïv×Ô¶¯±ä³ÉfinalµÄÁË
-				// v=2; ½øĞĞ¸³Öµ»á³ö´í
-				// Ô­ÒòÊÇÆäÊµÄÚ²¿ÄäÃûÀàÒ²ÉùÃ÷ÁËÒ»¸öv£¬ÒÔ¼°Ò»¸öÒÔvÎª²ÎÊıµÄ
-				// ¹¹Ôìº¯Êı£¬ÎªÁË±ÜÃâÆçÒå£¬ĞèÒª°ÉÍâÃæµÄĞŞÊÎ³ÉfinalµÄ
+				// è¿™é‡Œvè‡ªåŠ¨å˜æˆfinalçš„äº†
+				// v=2; è¿›è¡Œèµ‹å€¼ä¼šå‡ºé”™
+				// åŸå› æ˜¯å…¶å®å†…éƒ¨åŒ¿åç±»ä¹Ÿå£°æ˜äº†ä¸€ä¸ªvï¼Œä»¥åŠä¸€ä¸ªä»¥vä¸ºå‚æ•°çš„
+				// æ„é€ å‡½æ•°ï¼Œä¸ºäº†é¿å…æ­§ä¹‰ï¼Œéœ€è¦å§å¤–é¢çš„ä¿®é¥°æˆfinalçš„
 				System.out.println(v);
 			}
 		};
-		// ¼´Ê¹ÔÚÍâ²¿ĞŞ¸ÄvÒ²»áÔì³É±àÒë´íÎó
+		// å³ä½¿åœ¨å¤–éƒ¨ä¿®æ”¹vä¹Ÿä¼šé€ æˆç¼–è¯‘é”™è¯¯
 		// v=1;
 	}
 }
@@ -138,13 +138,13 @@ class A {
 
 class B extends A {
 
-	// Èç¹û¸¸ÀàÃ»ÓĞÄ¬ÈÏÎŞ²Î¹¹Ôìº¯Êı£¬×ÓÀà»á±¨´í
+	// å¦‚æœçˆ¶ç±»æ²¡æœ‰é»˜è®¤æ— å‚æ„é€ å‡½æ•°ï¼Œå­ç±»ä¼šæŠ¥é”™
 	public B(int a) {
 		super(a);
 
 	}
 
-	// overrideÓÃÓÚÔÚ ²»ÊÇÖØĞ´µÄÇé¿öÏÂ²úÉú±àÒë´íÎó
+	// overrideç”¨äºåœ¨ ä¸æ˜¯é‡å†™çš„æƒ…å†µä¸‹äº§ç”Ÿç¼–è¯‘é”™è¯¯
 	@Override
 	public void f() {
 		System.out.println("B.f()");
@@ -160,14 +160,14 @@ class C {
 
 	class D {
 		public void f() {
-			// ÄÚ²¿Àà¿ÉÒÔ·ÃÎÊÍâ²¿privateÊôĞÔ
+			// å†…éƒ¨ç±»å¯ä»¥è®¿é—®å¤–éƒ¨privateå±æ€§
 			System.out.println(c);
 		}
 	}
 
 	static class F {
 		public void f() {
-			// ²»¿ÉÒÔ·ÃÎÊÍâ²¿ÀàµÄÊôĞÔºÍ·½·¨
+			// ä¸å¯ä»¥è®¿é—®å¤–éƒ¨ç±»çš„å±æ€§å’Œæ–¹æ³•
 			// System.out.println(c);
 			System.out.println("static C.F.f()");
 		}
@@ -179,12 +179,12 @@ abstract class G {
 }
 
 interface H {
-	// interfaceÖ»ÄÜÉùÃ÷ÎªpublicµÄ
+	// interfaceåªèƒ½å£°æ˜ä¸ºpublicçš„
 	// private void f();
 	public void f();
 
-	// ½Ó¿ÚÊÇ¿ÉÒÔÊµÏÖÄ¬ÈÏ·½·¨µÄ
-	// ¿ÉÒÔÎªÒÑ¾­ÊµÏÖµÄÀàÌá¹©¶àÓàµÄÌØĞÔ¶ø²»ĞèÒªĞè¸Ä´úÂë
+	// æ¥å£æ˜¯å¯ä»¥å®ç°é»˜è®¤æ–¹æ³•çš„
+	// å¯ä»¥ä¸ºå·²ç»å®ç°çš„ç±»æä¾›å¤šä½™çš„ç‰¹æ€§è€Œä¸éœ€è¦éœ€æ”¹ä»£ç 
 	default public void f1() {
 		System.out.println("default");
 	}

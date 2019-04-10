@@ -3,13 +3,13 @@ package com.lcp.java.core;
 import java.util.Collections;
 
 /**
- *  Ö´ĞĞË³Ğò
- * ¸¸Àà¾²Ì¬´úÂë¿é
- * ×ÓÀà¾²Ì¬´úÂë¿é
- * ¸¸Àà·Ç¾²Ì¬´úÂë¿é
- * ¸¸Àà¹¹Ôìº¯Êı
- * ×ÓÀà·Ç¾²Ì¬´úÂë¿é
- * ×ÓÀà¹¹Ôìº¯Êı
+ *  æ‰§è¡Œé¡ºåº
+ * çˆ¶ç±»é™æ€ä»£ç å—
+ * å­ç±»é™æ€ä»£ç å—
+ * çˆ¶ç±»éé™æ€ä»£ç å—
+ * çˆ¶ç±»æ„é€ å‡½æ•°
+ * å­ç±»éé™æ€ä»£ç å—
+ * å­ç±»æ„é€ å‡½æ•°
  * @author buaaL
  *
  */
@@ -18,14 +18,14 @@ public class ExecutionOrder extends ExecutionParent{
 	private static String STR="child class static variable";
 
 	/**
-	 * ×ÓÀà¾²Ì¬´úÂë¿é
+	 * å­ç±»é™æ€ä»£ç å—
 	 */
 	static {
-		System.out.println("child class static block£º "+STR);
+		System.out.println("child class static blockï¼š "+STR);
 	}
 	
 	/**
-	 * ×ÓÀà¹¹Ôìº¯Êı
+	 * å­ç±»æ„é€ å‡½æ•°
 	 */
 	public ExecutionOrder()
 	{
@@ -34,7 +34,7 @@ public class ExecutionOrder extends ExecutionParent{
 	}
 	
 	/**
-	 * ×ÓÀà·Ç¾²Ì¬´úÂë¿é
+	 * å­ç±»éé™æ€ä»£ç å—
 	 */
 	{
 		System.out.println("child class block");
@@ -48,14 +48,14 @@ public class ExecutionOrder extends ExecutionParent{
 class ExecutionParent{
 	private static String STR="super class static variable";
 	/**
-	 * ¸¸Àà¾²Ì¬´úÂë¿é
+	 * çˆ¶ç±»é™æ€ä»£ç å—
 	 */
 	static {
 		System.out.println("superclass static block: "+STR);
 	}
 	
 	/**
-	 * ¸¸Àà¹¹Ôìº¯Êı
+	 * çˆ¶ç±»æ„é€ å‡½æ•°
 	 */
 	public ExecutionParent()
 	{
@@ -63,7 +63,7 @@ class ExecutionParent{
 	}
 	
 	/**
-	 * ¸¸Àà·Ç¾²Ì¬´úÂë¿é
+	 * çˆ¶ç±»éé™æ€ä»£ç å—
 	 */
 	{
 		System.out.println("super class block");

@@ -10,7 +10,7 @@ public class LearnJDBC {
 	public static void main(String[] args) {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			System.out.println("数据库驱动后加载成功");
+			System.out.println("鏁版嵁搴撻┍鍔ㄥ悗鍔犺浇鎴愬姛");
 			Connection connection=DriverManager.getConnection("jdbc:mysql://192.168.20.112:3306/robot?characterEncoding=UTF-8","root","123456");
 			Statement statement=(Statement) connection.createStatement();
 		} catch (ClassNotFoundException | SQLException e) {

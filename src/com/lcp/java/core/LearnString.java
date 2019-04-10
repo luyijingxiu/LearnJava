@@ -1,5 +1,5 @@
 /*
- * ѧϰjava string
+ * 学习java string
  */
 package com.lcp.java.core;
 

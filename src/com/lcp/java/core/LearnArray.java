@@ -6,8 +6,8 @@ import java.util.function.IntPredicate;
 
 public class LearnArray {
 	/**
-	 * Êı×éÉú³ÉÆ÷
-	 * ¿ÉÓÃÓÚ¶ÔÊıÆ÷
+	 * æ•°ç»„ç”Ÿæˆå™¨
+	 * å¯ç”¨äºå¯¹æ•°å™¨
 	 * @param size
 	 * @param value
 	 * @return
@@ -21,28 +21,28 @@ public class LearnArray {
 	}
 
 	/**
-	 * Êı×éµÄÉùÃ÷
-	 * int[] aºÍint a[]ÕâÁ½ÖÖĞ´·¨ÊÇÒ»ÑùµÄ£¬µ«ÊÇÇ°Ò»ÖÖ¸üÍÆ³ç
+	 * æ•°ç»„çš„å£°æ˜
+	 * int[] aå’Œint a[]è¿™ä¸¤ç§å†™æ³•æ˜¯ä¸€æ ·çš„ï¼Œä½†æ˜¯å‰ä¸€ç§æ›´æ¨å´‡
 	 */
 	private void declare() {
 		System.out.println("LearnArray.declare():");
-		//ÀàËÆC++
+		//ç±»ä¼¼C++
 		int[] a;
 		a=new int[2];
 	}
 	
 	/**
-	 * Êı×éµÄ³õÊ¼»¯
+	 * æ•°ç»„çš„åˆå§‹åŒ–
 	 */
 	private void init() {
 		System.out.println("LearnArray.init():");
 		int [] a=new int[2];
 		int [] b=new int[] {2,2,4};
-		//int[] c=new int[2]{2,3}; ÕâÖÖĞ´·¨ÊÇ´íÎóµÄ
+		//int[] c=new int[2]{2,3}; è¿™ç§å†™æ³•æ˜¯é”™è¯¯çš„
 	}
 	
 	/**
-	 * Êı×é¿½±´
+	 * æ•°ç»„æ‹·è´
 	 */
 	private void copyArray() {
 		System.out.println("LearnArray.copyArray():");
@@ -59,15 +59,15 @@ public class LearnArray {
 	}
 	
 	/**
-	 * ¶şÎ¬Êı×é
+	 * äºŒç»´æ•°ç»„
 	 */
 	private void twoDimensionArray() {
 		System.out.println("LearnArray.twoDimensionArray():");
 		
-		//ÉùÃ÷Óë³õÊ¼»¯
+		//å£°æ˜ä¸åˆå§‹åŒ–
 		int[][] m=new int[2][3];
 		int[][] n=new int[][] {{2,4,2,3},{1}};
-		//ÈıÎ¬Êı×é
+		//ä¸‰ç»´æ•°ç»„
 		int[][][] threeDimension=new int[2][2][2];
 		
 		for(int[] array:n)
@@ -75,45 +75,45 @@ public class LearnArray {
 				System.out.print(value+" ");
 		System.out.println();
 		
-		//×¢Òâµã£¬ÉÙ³õÊ¼»¯Ò»Î¬Ó¦¸ÃÈçºÎ
+		//æ³¨æ„ç‚¹ï¼Œå°‘åˆå§‹åŒ–ä¸€ç»´åº”è¯¥å¦‚ä½•
 		
-		//int[][] l=new int[2][]¿ÉÒÔ
-		//int[][] l=new int[][2]²»¿ÉÒÔ
+		//int[][] l=new int[2][]å¯ä»¥
+		//int[][] l=new int[][2]ä¸å¯ä»¥
 		int [][] l=new int[2][];
-		//Ö±½Ó·ÃÎÊl[0]ÊÇnull£¬·ÃÎÊl[0][0]»á±¨¿ÕÖ¸Õë
+		//ç›´æ¥è®¿é—®l[0]æ˜¯nullï¼Œè®¿é—®l[0][0]ä¼šæŠ¥ç©ºæŒ‡é’ˆ
 	}
 	
 	/**
-	 * ArraysµÄ¾²Ì¬¹¤¾ß·½·¨
+	 * Arraysçš„é™æ€å·¥å…·æ–¹æ³•
 	 */
 	private void arrayUtil() {
 		System.out.println("LearnArray.ArrayUtil():");
 		
-		//¿½±´·¶Î§Êı×é
+		//æ‹·è´èŒƒå›´æ•°ç»„
 		System.out.println("copyOfRange():");
 		int[] a=generate(10, 5);
 		int[] b=Arrays.copyOfRange(a, 0, 10);
 		
 		System.out.println(Arrays.toString(b));
 		
-		//Êı×éÊä³ö
+		//æ•°ç»„è¾“å‡º
 		System.out.println("toString():");
 		System.out.println(Arrays.toString(a));
 		
-		//Êı×éÅÅĞò
+		//æ•°ç»„æ’åº
 		System.out.println("sort():");
 		Arrays.sort(a);
 		System.out.println(Arrays.toString(a));
 		
-		//Êı×é¶ş·Ö²éÕÒ
+		//æ•°ç»„äºŒåˆ†æŸ¥æ‰¾
 		System.out.println("binaySearch():");
-		System.out.println("0µÄÎ»ÖÃ£º "+Arrays.binarySearch(a, 0));
+		System.out.println("0çš„ä½ç½®ï¼š "+Arrays.binarySearch(a, 0));
 		
-		//ÅĞ¶ÏÊı×éÊÇ·ñÏàÍ¬
+		//åˆ¤æ–­æ•°ç»„æ˜¯å¦ç›¸åŒ
 		System.out.println("equal():");
 		System.out.println(Arrays.equals(a, b));
 		
-		//Ìî³äÊı×é
+		//å¡«å……æ•°ç»„
 		System.out.println("fill():");
 		Arrays.fill(b, 0);
 		System.out.println(Arrays.toString(b));

@@ -1,7 +1,7 @@
 package com.lcp.java.core;
 
 /**
- * Ñ§Ï°¶àÏß³Ì
+ * å­¦ä¹ å¤šçº¿ç¨‹
  * @author buaaL
  *
  */
@@ -13,10 +13,10 @@ public class LearnThread {
 	}
 	
 	/**
-	 * ÈıÖÖÆô¶¯Ïß³ÌµÄ·½Ê½
-	 * ¼Ì³ĞÏß³ÌÀà
-	 * ÊµÏÖRunnable½Ó¿Ú
-	 * ÄäÃûÀà
+	 * ä¸‰ç§å¯åŠ¨çº¿ç¨‹çš„æ–¹å¼
+	 * ç»§æ‰¿çº¿ç¨‹ç±»
+	 * å®ç°Runnableæ¥å£
+	 * åŒ¿åç±»
 	 */
 	private void startThread() {
 		
@@ -30,8 +30,8 @@ public class LearnThread {
 	    public int damage;
 	  
 	    public synchronized void recover() {
-	        //µ±ÑªÁ¿´óÓÚ»òÕßµÈÓÚ1000µÄÊ±ºò
-	        //this.wait() ÈÃÕ¼ÓÃÕâ¸ö¶ÔÏóµÄÏß³ÌµÈ´ı£¬²¢ÁÙÊ±ÊÍ·ÅËø
+	        //å½“è¡€é‡å¤§äºæˆ–è€…ç­‰äº1000çš„æ—¶å€™
+	        //this.wait() è®©å ç”¨è¿™ä¸ªå¯¹è±¡çš„çº¿ç¨‹ç­‰å¾…ï¼Œå¹¶ä¸´æ—¶é‡Šæ”¾é”
 	        while(hp>=1000){
 	            try {
 	                this.wait();
@@ -42,14 +42,14 @@ public class LearnThread {
 	        }
 	         
 	        hp = hp + 1;
-	        System.out.printf("%s »ØÑª1µã,Ôö¼ÓÑªºó£¬%sµÄÑªÁ¿ÊÇ%.0f%n", name, name, hp);
+	        System.out.printf("%s å›è¡€1ç‚¹,å¢åŠ è¡€åï¼Œ%sçš„è¡€é‡æ˜¯%.0f%n", name, name, hp);
 	        this.notify();
 	    }
 	  
 	    public synchronized void hurt() {
-	        //°Ñif¸ÄÎªwhile£¬±»»½ĞÑºó£¬»áÖØ¸´²é¿´hpµÄÖµ£¬Ö»ÓĞhp´óÓÚ1£¬²Å»áÍùÏÂÖ´ĞĞ
+	        //æŠŠifæ”¹ä¸ºwhileï¼Œè¢«å”¤é†’åï¼Œä¼šé‡å¤æŸ¥çœ‹hpçš„å€¼ï¼Œåªæœ‰hpå¤§äº1ï¼Œæ‰ä¼šå¾€ä¸‹æ‰§è¡Œ
 	        //if (hp <= 1) {
-	    	//ifºÍwhileµÄÇø±ğÔÚÓÚ£¬±»ÒâÍâ»½ĞÑÖ®ºó»á²»»áÖØĞÂ¼ì²éhp£¬if¾ÍÖ±½ÓÖ´ĞĞ¼õÑªÁË£¬while»á½øÈëÏÂ´ÎÑ­»·
+	    	//ifå’Œwhileçš„åŒºåˆ«åœ¨äºï¼Œè¢«æ„å¤–å”¤é†’ä¹‹åä¼šä¸ä¼šé‡æ–°æ£€æŸ¥hpï¼Œifå°±ç›´æ¥æ‰§è¡Œå‡è¡€äº†ï¼Œwhileä¼šè¿›å…¥ä¸‹æ¬¡å¾ªç¯
 	        while (hp <= 1) {
 	            try {
 	                this.wait();
@@ -60,16 +60,16 @@ public class LearnThread {
 	        }
 	  
 	        hp = hp - 1;
-	        System.out.printf("%s ¼õÑª1µã,¼õÉÙÑªºó£¬%sµÄÑªÁ¿ÊÇ%.0f%n", name, name, hp);
-	        //µôÑªÖ®ºó£¬»½ĞÑµÈ´ıµÄÏß³Ì
+	        System.out.printf("%s å‡è¡€1ç‚¹,å‡å°‘è¡€åï¼Œ%sçš„è¡€é‡æ˜¯%.0f%n", name, name, hp);
+	        //æ‰è¡€ä¹‹åï¼Œå”¤é†’ç­‰å¾…çš„çº¿ç¨‹
 	        this.notify();
 	    }
 	  
 	    public void attackHero(Hero h) {
 	        h.hp -= damage;
-	        System.out.format("%s ÕıÔÚ¹¥»÷ %s, %sµÄÑª±ä³ÉÁË %.0f%n", name, h.name, h.name, h.hp);
+	        System.out.format("%s æ­£åœ¨æ”»å‡» %s, %sçš„è¡€å˜æˆäº† %.0f%n", name, h.name, h.name, h.hp);
 	        if (h.isDead())
-	            System.out.println(h.name + "ËÀÁË£¡");
+	            System.out.println(h.name + "æ­»äº†ï¼");
 	    }
 	  
 	    public boolean isDead() {
@@ -123,7 +123,7 @@ public class LearnThread {
 	     
 	    public static void exec() {
 	        final Hero gareen = new Hero();
-	        gareen.name = "¸ÇÂ×";
+	        gareen.name = "ç›–ä¼¦";
 	        gareen.hp = 616;
 	         
 	        for (int i = 0; i < 2; i++) {
