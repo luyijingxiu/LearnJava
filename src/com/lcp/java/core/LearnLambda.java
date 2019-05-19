@@ -1,4 +1,4 @@
-﻿package com.lcp.java.core;
+package com.lcp.java.core;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,13 +21,15 @@ public class LearnLambda {
 		}
 		hList.add(hList.get(0));
 		System.out.println(hList);
-		
-		
+
+
 		LearnLambda learnLambda = new LearnLambda();
 		learnLambda.differentMethodToFilter(hList);
 		learnLambda.comparator(hList);
 		learnLambda.aggregate(hList);
+
 	}
+
 
 	/**
 	 * 使用正常方法，匿名方法，lambda方法分别对列表进行筛选
@@ -162,7 +164,7 @@ public class LearnLambda {
 	public boolean testHelloInstanceMethon(Hero hero) {
 		return hero.getDamage() < 50 && hero.getHp() > 100;
 	}
-	
+
 	static class Hero {
 		private int hp;
 		private int damage;
